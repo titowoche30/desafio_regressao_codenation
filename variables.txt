@@ -1,0 +1,29 @@
+Dropar por informação redundante: ['SG_UF_RESIDENCIA'],['TP_PRESENCA_CN', 'TP_PRESENCA_CH', 'TP_PRESENCA_LC']
+Dropar por ter muitos nulos e a maioria dos não nulos são uma informação específica, isso acaba não acrescentando em nada:'TP_ENSINO','TP_DEPENDENCIA_ADM_ESC','TP_STATUS_REDACAO', 'NU_NOTA_COMP1',
+       'NU_NOTA_COMP2', 'NU_NOTA_COMP3', 'NU_NOTA_COMP4', 'NU_NOTA_COMP5',
+       'NU_NOTA_REDACAO']
+
+
+Dropar por informação inútil:['CO_PROVA_CN',
+       'CO_PROVA_CH', 'CO_PROVA_LC', 'CO_PROVA_MT']
+
+Substituir os nulos de NU_NOTA_CN,NU_NOTA_CH,NU_NOTA_LC e NU_NOTA_MT por 0 pq esses foram os eliminados e faltantes.
+Substituir os nulos de 'Q027'  por N pq esse são os que nunca exerceram atividade.
+
+Checar os 0(que são nulos) de: 'TP_COR_RACA','TP_NACIONALIDADE',
+Checar os 1(que são nulos) de: 'TP_ESCOLA',
+Checar os H(que são nulos) de: 'Q001', 'Q002'
+Trocar os números pelos valores de fato de: 'TP_ANO_CONCLUIU'
+
+Transformar em ordinais: Q001,Q002
+
+Feature engineering: transforma em só uma coluna média de ( 'IN_BAIXA_VISAO', 'IN_CEGUEIRA', 'IN_SURDEZ', 'IN_DISLEXIA',
+       'IN_DISCALCULIA') e ('IN_SABATISTA', 'IN_GESTANTE', 'IN_IDOSO')
+
+Cat nominais - Transformar em dummies: ['TP_COR_RACA','TP_NACIONALIDADE','TP_ST_CONCLUSAO','TP_ESCOLA',
+'TP_ENSINO'(?),'TP_DEPENDENCIA_ADM_ESC'(?),'Q027','QO47']
+
+
+
+
+
